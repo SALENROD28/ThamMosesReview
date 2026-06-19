@@ -14,7 +14,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background-color: #ffffff;
-  border-left: 60px solid #236f7c;
+  border-left: none;
 }
 
 /* Header */
