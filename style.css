@@ -2,48 +2,39 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   background-color: #ffffff;
   color: #111111;
-  line-height: 1.6;
 }
 
-/* Main wrapper */
-
+/* Whole page */
 .page-wrapper {
   width: 100%;
   min-height: 100vh;
   background-color: #ffffff;
-  border-left: 55px solid #236f7c;
+  border-left: 60px solid #236f7c;
 }
 
 /* Header */
-
 .site-header {
   background-color: #ffffff;
-  border-bottom: 4px solid #236f7c;
-  padding: 28px 40px;
-  width: 100%;
+  padding: 35px 40px;
+  border-bottom: 5px solid #8fcfca;
 }
 
 .header-inner {
-  width: 100%;
   display: flex;
   align-items: center;
   gap: 40px;
+  width: 100%;
 }
 
 .cover-box img {
   width: 130px;
   height: auto;
   display: block;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .title-box {
@@ -52,39 +43,36 @@ body {
 }
 
 .title-box h1 {
-  font-size: 4.5rem;
-  letter-spacing: 14px;
   margin: 0;
+  font-size: 4.5rem;
+  letter-spacing: 12px;
   color: #236f7c;
   font-weight: bold;
 }
 
 .subtitle {
+  margin: 0;
   font-size: 2rem;
   font-style: italic;
-  margin: 0;
   color: #111111;
 }
 
 .tagline {
-  font-size: 0.95rem;
-  letter-spacing: 2px;
   margin-top: 8px;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #8fcfca;
 }
 
-/* Navigation Bar */
-
+/* Navigation */
 .navbar {
   background-color: #236f7c;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0;
   flex-wrap: wrap;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   width: 100%;
 }
 
@@ -92,9 +80,9 @@ body {
 .dropbtn {
   color: #ffffff;
   text-decoration: none;
-  padding: 13px 18px;
+  padding: 14px 20px;
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   background: none;
@@ -106,7 +94,6 @@ body {
 .navbar a:hover,
 .dropdown:hover .dropbtn {
   background-color: #111111;
-  color: #ffffff;
 }
 
 .dropdown {
@@ -118,32 +105,28 @@ body {
   position: absolute;
   background-color: #ffffff;
   min-width: 170px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
   border: 2px solid #236f7c;
-  z-index: 1001;
+  z-index: 1000;
 }
 
 .dropdown-content a {
   color: #111111;
-  padding: 12px 14px;
   text-align: left;
 }
 
 .dropdown-content a:hover {
   background-color: #d7f0ee;
-  color: #111111;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Introduction Section */
-
+/* Main section */
 .intro-section {
   width: 100%;
   min-height: calc(100vh - 260px);
-  padding: 70px 80px;
+  padding: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
@@ -158,22 +141,20 @@ body {
 .intro-cover img {
   width: 280px;
   height: auto;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
 .intro-text h2 {
   color: #236f7c;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   margin-top: 0;
 }
 
 .intro-text p {
   font-size: 1.05rem;
-  max-width: 700px;
+  line-height: 1.6;
 }
 
 /* Button */
-
 .button {
   display: inline-block;
   background-color: #236f7c;
@@ -191,74 +172,9 @@ body {
 }
 
 /* Footer */
-
 footer {
-  background-color: #236f7c;
+  background-color: #111111;
   color: #ffffff;
   text-align: center;
   padding: 24px;
-  font-size: 0.9rem;
-  width: 100%;
-}
-
-/* Responsive Design */
-
-@media screen and (max-width: 850px) {
-  .page-wrapper {
-    border-left: 25px solid #236f7c;
-  }
-
-  .header-inner {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .title-box h1 {
-    font-size: 3rem;
-    letter-spacing: 8px;
-  }
-
-  .subtitle {
-    font-size: 1.5rem;
-  }
-
-  .intro-section {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 50px 30px;
-  }
-
-  .intro-text p {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .page-wrapper {
-    border-left: none;
-  }
-
-  .title-box h1 {
-    font-size: 2.3rem;
-    letter-spacing: 5px;
-  }
-
-  .navbar {
-    flex-direction: column;
-  }
-
-  .navbar a,
-  .dropbtn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .dropdown {
-    width: 100%;
-  }
-
-  .dropdown-content {
-    position: static;
-    width: 100%;
-  }
 }
