@@ -271,3 +271,45 @@ footer {
 footer {
   display: none !important;
 }
+
+/* FOUR-BOX INTRODUCTION LAYOUT */
+
+.intro-grid-page {
+  width: 100%;
+  min-height: calc(100vh - 230px);
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 22px;
+  background-color: #ffffff;
+}
+
+.intro-box {
+  border: 4px solid #6f8191;
+  background-color: #ffffff;
+  padding: 35px 45px;
+  overflow: auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.intro-box h2 {
+  color: #236f7c;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.intro-box p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Responsive version for small screens */
+@media screen and (max-width: 800px) {
+  .intro-grid-page {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
