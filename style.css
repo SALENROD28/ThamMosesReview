@@ -206,3 +206,68 @@ footer {
   margin-right: 0 !important;
   border-left: 0 !important;
 }
+
+/* TIGHT FULL-SCREEN WEBTEXT LAYOUT */
+
+.site-header {
+  padding: 18px 40px !important;
+}
+
+.header-inner {
+  align-items: center !important;
+}
+
+.title-box h1 {
+  font-size: 3.8rem !important;
+  letter-spacing: 10px !important;
+}
+
+.subtitle {
+  font-size: 1.5rem !important;
+}
+
+.tagline {
+  font-size: 0.8rem !important;
+  margin-top: 4px !important;
+}
+
+.navbar {
+  min-height: 46px !important;
+}
+
+.navbar a,
+.dropbtn {
+  padding: 12px 18px !important;
+}
+
+/* Main area starts closer to toolbar */
+.intro-section {
+  min-height: calc(100vh - 210px) !important;
+  padding: 35px 60px !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 35px !important;
+  align-items: start !important;
+}
+
+/* Move content closer to the top */
+.intro-cover,
+.intro-text {
+  margin-top: 40px !important;
+}
+
+/* Make intro text panel feel tighter */
+.intro-text h2 {
+  margin-bottom: 20px !important;
+  font-size: 2.2rem !important;
+}
+
+.intro-text p {
+  max-width: 650px !important;
+  line-height: 1.5 !important;
+}
+
+/* Remove unnecessary bottom spacing */
+footer {
+  display: none !important;
+}
