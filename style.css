@@ -367,3 +367,9 @@ footer {
 body,
 .page-wrapper {
   background-color: #ffffff;
+
+/* FINAL BOOK COVER COLOR OVERRIDE */
+
+body {
+  background-color: #ffffff !important;
+
