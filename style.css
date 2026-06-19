@@ -178,3 +178,31 @@ footer {
   text-align: center;
   padding: 24px;
 }
+
+/* REMOVE LEFT GREEN STRIP */
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #ffffff !important;
+}
+
+.page-wrapper {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  background-color: #ffffff !important;
+}
+
+.site-header,
+.navbar,
+main,
+.intro-section,
+footer {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border-left: 0 !important;
+}
