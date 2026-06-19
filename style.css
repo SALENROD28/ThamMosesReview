@@ -360,3 +360,10 @@ footer {
 footer {
   margin: 0;
 }
+
+/* BOOK COVER COLOR THEME */
+
+/* Main page background */
+body,
+.page-wrapper {
+  background-color: #ffffff;
