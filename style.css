@@ -227,8 +227,10 @@ footer {
 }
 
 .tagline {
-  font-size: 0.8rem !important;
-  margin-top: 4px !important;
+  font-size: 1.4rem !important;
+  margin-top: 8px !important;
+  letter-spacing: 4px !important;
+  font-weight: bold !important;
 }
 
 .navbar {
